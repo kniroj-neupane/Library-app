@@ -9,7 +9,7 @@ function Book(title, author, pages, status) {
 const booksContainer = document.getElementById('booksContainer');
 const formContainer = document.getElementById('formContainer');
 
-myLibrary[0] = new Book('The Hobbit', 'JJ Tolkein', 222, 'Completed');
+myLibrary[0] = new Book('The Hobbit', 'JRR Tolkien', 304, 'Completed');
 //function to render DOM 
 function displayBooks() {
     booksContainer.innerHTML = '';
