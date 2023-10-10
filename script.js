@@ -15,6 +15,7 @@ function addNewBook(book) {
 
 
 const booksContainer = document.getElementById('booksContainer');
+const formContainer = document.getElementById('formContainer');
 for (let i = 0; i < myLibrary.length; i++) {
 
     const booksdiv = document.createElement('div');
@@ -55,5 +56,19 @@ bookStatusBtn.forEach((statusbtn) => {
             statusbtn.textContent = 'Reading';
         else if (statusbtn.textContent === 'Reading')
             statusbtn.textContent = 'Completed'
+    })
+});
+const displaySwitchButtons = document.querySelectorAll('.displaySwitch');
+displaySwitchButtons.forEach((btns) => {
+    btns.addEventListener('click',()=>{
+        if(btns.getAttribute('id') == 'addNew'){
+            formContainer.setAttribute('style','display:flex');
+            booksContainer.setAttribute('style','display:none');
+        }
+        else if(btns.getAttribute('id') == 'close' ||
+                btns.getAttribute('id') == 'add'){
+            formContainer.setAttribute('style','display:none');
+            booksContainer.setAttribute('style','display:flex');
+        }
     })
 });

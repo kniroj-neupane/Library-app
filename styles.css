@@ -22,17 +22,22 @@ header{
 }
 #addNew{
     height: 35px;
-    width: 35px;
-    font-size: 26px ;
+    width: 100px;
+    font-size: 18px ;
     font-weight: bold;
     margin: auto;
-    margin-left: 80vw;
+    margin-left: 70vw;
     border-radius: 50px;
     border: none;
     box-shadow: 2px 2px black;
 }
+#addNew:hover{
+    background-color: rgba(49, 44, 44, 0.281);
+    color: white;
+    cursor: pointer;
+}
 #booksContainer{
-    display: none;
+    display: flex;
     width: 90vw;
     min-height: 70vh;
     flex-wrap: wrap;
@@ -76,7 +81,9 @@ header{
     box-shadow: 2px 2px black;
     font-size: 18px;
 }
-
+.booksstatus:hover,.booksdrop:hover{
+    cursor: pointer;
+}
 .booksstatus{
     background-color: rgba(0, 195, 255, 0.219);
     color: white;
@@ -94,9 +101,13 @@ header{
     box-shadow: 7px 7px rgba(48, 49, 49, 0.692);
     color: white;
     font-size: 26px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 form{
-    margin-left: 10vw;
+    margin-top: -10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -113,9 +124,37 @@ form>div{
 }
 input,select{
     height: 5vh;
-    font-size: 22px;
+    font-size: 18px;
     color: black;
     background-image: linear-gradient(to right, rgba(0, 195, 255, 0.1), rgba(255, 0, 0, 0.1));
+    padding-left: 5px;
+}
+form>#buttons{
+    display: inline;
+    margin-top: 5vh;
 }
 
+#buttons>button{
+    height: 5vh;
+    width: 13vw;
+    font-size: 18px;
+}
+#close:hover{
+    background-color: rgba(255, 0, 0, 0.281);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+#reset:hover{
+    background-color: rgba(68, 53, 53, 0.281);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+#add:hover{
+    background-color: rgba(0, 204, 255, 0.281);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
 
