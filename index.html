@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library App</title>
+    <script
+    src="https://kit.fontawesome.com/4c536a6bd5.js"
+    crossorigin="anonymous"
+  ></script>
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -18,39 +22,50 @@
         <div id="booksContainer">
         </div>
         <div id="formContainer">
-            <form>
+            <form method="get" id="form">
                 <div id="formtitle">
                     <h2 class="formTitle">Add New Book</h2>
                 </div>
                 <div>
                     <label for="booktitle">Book Title</label>
-                    <input type="text" id="booktitle">
+                    <input type="text" id="booktitle" placeholder="book title" required>
                 </div>
                 <div>
                     <label for="bookauthor">Book Author</label>
-                    <input type="text" id="bookauthor">
+                    <input type="text" id="bookauthor" placeholder="book author" required>
                 </div>
                 <div>
                     <label for="bookpages">Number of Pages</label>
-                    <input type="text" id="bookpages">
+                    <input type="number" id="bookpages" placeholder="number of pages" required>
                 </div>
                 <div>
                     <label for="bookstatus">Status</label>
                     <select name="bookstatus" id="bookstatus">
                         <menu>
-                            <option value="completed">Completed</option>
-                            <option value="reading">Reading</option>
+                            <option value="Reading">Reading</option>
+                            <option value="Completed">Completed</option>
                         </menu>
                     </select>
                 </div>
                 <div id="buttons">
                     <button id="close" class="displaySwitch">Close</button>
-                    <button type="reset" id="reset">Reset</button>
+                    <button id="resetbtn">Reset</button>
                     <button id="add" class="displaySwitch">Add</button>
                 </div>
             </form>
         </div>
     </main>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          kniroj-neupane
+        </p>
+        <a href="https://github.com/kniroj-neupane" target="_blank">
+          <i class="fab fa-github"></i></a>
+      </footer>
 
 </body>
 
