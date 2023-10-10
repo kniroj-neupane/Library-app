@@ -16,30 +16,37 @@
     </header>
     <main>
         <div id="booksContainer">
+        </div>
         <div id="formContainer">
             <form>
-                <h2 class="formTitle">Add New Book</h2>
-                <label for="booktitle">
-                    Book title
-                    <input type="text"  id="booktitle">
-                </label>
-                <label for="bookauthor">
-                    Book author
-                    <input type="text"  id="bookauthor">
-                </label>
-                <label for="bookpages">
-                    Number of Pages
-                    <input type="text"  id="bookpages">
-                </label>
-                <label for="bookstatus">
-                    Book Status
-                    <input type="checkbox"  id="bookstatus">
-                </label>
+                <div id="formtitle">
+                    <h2 class="formTitle">Add New Book</h2>
+                </div>
+                <div>
+                    <label for="booktitle">Book Title</label>
+                    <input type="text" id="booktitle">
+                </div>
+                <div>
+                    <label for="bookauthor">Book Author</label>
+                    <input type="text" id="bookauthor">
+                </div>
+                <div>
+                    <label for="bookpages">Number of Pages</label>
+                    <input type="text" id="bookpages">
+                </div>
+                <div>
+                    <label for="bookstatus">Status</label>
+                    <select name="bookstatus" id="bookstatus">
+                        <menu>
+                            <option value="completed">Completed</option>
+                            <option value="reading">Reading</option>
+                        </menu>
+                    </select>
+                </div>
             </form>
         </div>
     </main>
 
-    </div>
 </body>
 
 </html>

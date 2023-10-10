@@ -32,7 +32,7 @@ header{
     box-shadow: 2px 2px black;
 }
 #booksContainer{
-    display: flex;
+    display: none;
     width: 90vw;
     min-height: 70vh;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ header{
     width: 20vw;
     height: 30vh;
     margin: 1vw;
-    background-image: linear-gradient(to right, rgb(0, 195, 255), rgba(255,0,0,1));
+    background-image: linear-gradient(to right, rgb(0, 195, 255,0.3), rgba(255,0,0,0.3));
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -84,4 +84,38 @@ header{
 .completed{
     background-color: rgba(255, 0, 0, 0.623);
 }
+#formContainer{
+    min-height: 80vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 5vh;
+    background-image: linear-gradient(to right, rgba(0, 195, 255, 0.3), rgba(255, 0, 0, 0.3));
+    border-radius: 10px;
+    box-shadow: 7px 7px rgba(48, 49, 49, 0.692);
+    color: white;
+    font-size: 26px;
+}
+form{
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+#formtitle{
+    text-align: center;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40vw;
+}
+input,select{
+    height: 5vh;
+    font-size: 22px;
+    color: black;
+    background-image: linear-gradient(to right, rgba(0, 195, 255, 0.1), rgba(255, 0, 0, 0.1));
+}
+
 
